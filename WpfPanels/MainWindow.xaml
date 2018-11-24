@@ -1,0 +1,74 @@
+﻿<Window x:Class="WpfPanels.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfPanels"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid ShowGridLines="False">
+        <Grid.RowDefinitions>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+            <ColumnDefinition ></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Button Grid.Row="0"
+                Grid.Column="0"
+                Content="A" Click="Button_Click1"/>
+        <Button Grid.Row="0"
+                Grid.Column="1"
+                Content="B,C,D" Click="Button_Click2" ></Button>        
+        <Button Grid.Row="0"
+                Grid.Column="2"
+                Content="E" Click="Button_Click3"></Button>
+        <Button Grid.Row="1"
+                Grid.Column="0"
+                Content="F" Click="Button_Click4"></Button>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Content="G" Click="Button_Click5"></Button>
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                Content="H" Click="Button_Click6"></Button>
+        <Button Grid.Row="2"
+                Grid.Column="0"
+                Content="I"></Button>
+        <Button Grid.Row="2"
+                Grid.Column="1"
+                Content="J"></Button>
+        <Button Grid.Row="2"
+                Grid.Column="2"
+                Content="K" Click="Button_Click7"></Button>
+        <Button Grid.Row="3"
+                Grid.Column="0"
+                Content="L"></Button>
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Content="M"></Button>
+        <Button Grid.Row="3"
+                Grid.Column="2"
+                Content="N"></Button>
+        <Button Grid.Row="4"
+                Grid.Column="0"
+                Content="O"></Button>
+        <Button Grid.Row="4"
+                Grid.Column="1"
+                Content="P"></Button>
+        <Button Grid.Row="4"
+                Grid.Column="2"
+                Content="Q"></Button>
+        <Button Grid.Row="5"
+                Grid.ColumnSpan="3"                
+                Content="Quit"></Button>
+    </Grid>
+</Window>
